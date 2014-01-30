@@ -5,7 +5,8 @@
 # sh HadleyUbuntu.sh
 
 # Ipython
-sudo apt-get install ipython-notebook -y #for some reason when I use this it installs v.12
+sudo apt-get install python-setuptools
+sudo easy_install ipython[all]
 sudo apt-get install python-matplotlib -y
 sudo apt-get install python-scipy -y
 sudo apt-get install python-pandas -y
