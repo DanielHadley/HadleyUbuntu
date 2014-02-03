@@ -4,15 +4,24 @@
 # Then type:
 # sh HadleyUbuntu.sh
 
-# Ipython
-sudo apt-get install python-setuptools
-sudo easy_install ipython[all]
-sudo apt-get install python-matplotlib -y
-sudo apt-get install python-scipy -y
-sudo apt-get install python-pandas -y
-sudo apt-get install python-sympy -y
-sudo apt-get install python-nose -y
-sudo apt-get install python-numpy -y
+# Python packages
+# Use setup and Pip to easily install packages
+cd Downloads
+wget  https://bitbucket.org/pypa/setuptools/raw/bootstrap/ez_setup.py
+sudo python ez_setup.py
+wget https://raw.github.com/pypa/pip/master/contrib/get-pip.py
+sudo python get-pip.py
+cd
+# First pip Ipython
+pip install ipython[all]
+# Now other packages
+pip install python-matplotlib 
+pip install python-scipy 
+pip install python-pandas 
+pip install python-sympy 
+pip install python-nose 
+pip install python-numpy
+
 
 # Sublime text
 sudo add-apt-repository ppa:webupd8team/sublime-text-2
