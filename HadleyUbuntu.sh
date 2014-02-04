@@ -4,27 +4,6 @@
 # Then type:
 # sh HadleyUbuntu.sh
 
-# Python packages
-# Use setup and Pip to easily install packages
-cd Downloads
-wget  https://bitbucket.org/pypa/setuptools/raw/bootstrap/ez_setup.py
-sudo python ez_setup.py
-wget https://raw.github.com/pypa/pip/master/contrib/get-pip.py
-sudo python get-pip.py
-cd
-# First pip Ipython (may want to create a virtual environment for these)
-# Also, may have problems with pip making directories in root folder
-# Could use sudo pip, but not sure
-pip install ipython[all]
-# Now other packages 
-pip install python-matplotlib 
-pip install python-scipy 
-pip install python-pandas 
-pip install python-sympy 
-pip install python-nose 
-pip install python-numpy
-
-
 # Sublime text
 sudo add-apt-repository ppa:webupd8team/sublime-text-2
 sudo apt-get update
