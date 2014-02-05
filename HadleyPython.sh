@@ -28,11 +28,12 @@ source activate
 # all of the below will be in a virtual environment
 pip install ipython[all]
 # Now other packages 
-pip install python-matplotlib 
-pip install python-scipy 
-pip install python-pandas 
-pip install python-sympy 
-pip install python-nose 
-pip install python-numpy
+pip install numpy
+pip install matplotlib 
+pip install scipy 
+pip install pandas 
+pip install sympy 
+pip install nose 
+
 
 deactivate # leave the virtual environment
