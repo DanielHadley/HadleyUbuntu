@@ -16,8 +16,15 @@ wget https://raw.github.com/pypa/pip/master/contrib/get-pip.py
 sudo python get-pip.py
 cd
 
+
+# I got this error a lot
+# http://stackoverflow.com/questions/18785063/install-numpy-in-python-virtualenv
+sudo apt-get update    
+sudo apt-get upgrade gcc
+sudo apt-get install python2.7-dev
+
 # Now create a virtual environment 
-# sudo pip install virtualenv #(The sudo pip requires a password, but it better)
+sudo pip install virtualenv #(The sudo pip requires a password, but it better)
 # Create a nice safe sandbox to expirament with
 # http://www.pythonforbeginners.com/basics/how-to-use-python-virtualenv/ 
 cd Documents
